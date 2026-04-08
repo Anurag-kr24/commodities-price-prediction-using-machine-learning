@@ -85,6 +85,17 @@ Add real-time data integration
 Improve feature engineering
 Deploy as a full web application
 
+## OUTPUT-
+The model outputs are in normalized scale because I applied preprocessing to bring values into a consistent range for better model performance.
+So the predictions represent relative price levels rather than absolute USD values.
+
+The dataset originally represents commodity prices typically in USD per unit (like ounce), but since preprocessing was applied, the model outputs normalized values.
+
+Normalization helps models like XGBoost and Prophet converge better and handle numerical stability, especially when dealing with large price ranges like gold.
+
+## For USD per Ounce-
+In a real-world system, we would apply inverse scaling to convert them back into actual commodity prices like USD per ounce.
+
 Author-
 Anurag Kumar
 https://github.com/Anurag-kr24
