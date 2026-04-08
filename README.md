@@ -37,6 +37,9 @@ Predictions were compared with actual values and improved through iteration.
 ### Deployment
 A simple Flask application was built to make predictions based on user input.
 
+### Testing
+Each model was trained on historical data and tested on unseen future values.
+
 ---
 
 ## Tech Stack
