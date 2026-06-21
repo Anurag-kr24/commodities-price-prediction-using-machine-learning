@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
+import pickle
+with open("Models/scaler.pkl", "wb") as f:
+    pickle.dump(scaler, f)
 
 
 gold_df = pd.read_csv("Datasets/gold_data.csv")
@@ -11,8 +14,8 @@ gold_df['date'] = pd.to_datetime(gold_df['date'], errors='coerce')
 silver_df['date'] = pd.to_datetime(silver_df['date'], errors='coerce')
 
 
-gold_df = gold_df.dropna(subset=['date'])
-silver_df = silver_df.dropna(subset=['date'])
+gold_df = gold_df.dropna(subset=['date']).sort_values('date')
+silver_df = silver_df.dropna(subset=['date']).sort_values('date')
 
 
 def remove_outliers(df, column):
