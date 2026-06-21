@@ -60,6 +60,15 @@ Models/
 Flask_app/
 README.md
 
+##  Live Demo
+
+<div align="center">
+
+<a href="https://commodities-price-prediction-using.onrender.com/">
+<img src="https://img.shields.io/badge/OPEN%20LIVE%20APP-111827?style=for-the-badge&logo=render&logoColor=00E5FF">
+</a>
+
+</div>
 
 ---
 
