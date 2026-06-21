@@ -65,4 +65,4 @@ plt.show()
 gold_df.to_csv('Datasets/analyzed_gold_data.csv', index=False)
 silver_df.to_csv('Datasets/analyzed_silver_data.csv', index=False)
 
-print("Data analysis completed and saved!")
+print("Data analysis has been completed and saved!")
