@@ -16,7 +16,6 @@ MarkupSafe==3.0.3
 matplotlib==3.10.8
 narwhals==2.19.0
 numpy==2.4.4
-nvidia-nccl-cu12==2.29.7
 packaging==26.0
 pandas==3.0.2
 patsy==1.0.2
